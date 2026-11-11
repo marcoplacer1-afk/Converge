@@ -1,45 +1,727 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f7f8f7"><title>Converge — Three paths. One page.</title><style>
-:root{font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#172126;background:#f8faf9}*{box-sizing:border-box}body{margin:0}button,input{font:inherit}button{cursor:pointer}button:disabled{opacity:.35;cursor:default}button:focus-visible,a:focus-visible{outline:2px solid #397cbb;outline-offset:2px}a{color:#2765a9}.hide{display:none!important}.top{height:62px;border-bottom:1px solid #e2e7e5;display:flex;align-items:center;justify-content:space-between;padding:0 22px;background:#fff;gap:18px}.brand{font-size:21px;letter-spacing:-.9px;font-weight:780;display:flex;align-items:center;gap:10px;white-space:nowrap}.mark{width:22px;height:22px;position:relative}.mark:before,.mark:after{content:"";position:absolute;border:2px solid #333;transform:rotate(45deg);width:9px;height:9px;top:4px}.mark:before{left:0;border-color:#6283c4}.mark:after{right:0;border-color:#58a382}.nav{display:flex;align-items:center;gap:12px}.linkbtn{border:0;background:transparent;color:#758187;font-size:13px;padding:9px 4px}.linkbtn:hover{color:#15252c}.button{border:1px solid #d8dfdb;background:white;color:#263037;border-radius:8px;padding:11px 16px;font-size:13px;font-weight:650}.button:hover{background:#f2f4f3}.button.dark{background:#1b2a31;color:white;border-color:#1b2a31}.button.dark:hover{background:#36464e}.counter{text-align:center;display:flex;flex-direction:column;line-height:1.05}.counter b{font-size:24px;letter-spacing:-1px}.counter small{font-size:9px;letter-spacing:1.3px;color:#859194;margin-top:3px;font-weight:750}.home{min-height:calc(100dvh - 62px);display:grid;place-items:center;padding:36px 20px}.home-inner{max-width:660px;width:100%;text-align:center}.eyebrow{font-weight:700;font-size:11px;letter-spacing:2px;color:#839294;text-transform:uppercase}.home h1{font-size:clamp(49px,8vw,86px);letter-spacing:-5px;font-weight:770;margin:12px 0 14px;line-height:1.05}.home p{color:#77858b;line-height:1.75;font-size:16px;max-width:510px;margin:0 auto}.mini-flow{display:flex;align-items:center;justify-content:center;gap:15px;margin:46px 0;color:#8c999e}.mini-node{border:1px solid #dce4e0;background:white;border-radius:12px;min-width:112px;padding:15px 12px;color:#213139;font-size:13px;font-weight:600}.mini-node:nth-child(1){border-top:3px solid #5c85c6}.mini-node:nth-child(2){border-top:3px solid #cd9563}.mini-node:nth-child(3){border-top:3px solid #62a48d}.home-actions{display:flex;gap:11px;justify-content:center}.home-actions .button{min-width:150px;padding:14px 18px}.home-note{margin-top:29px!important;font-size:12px!important;color:#a0aaad!important}.game{height:calc(100dvh - 62px);display:flex;flex-direction:column;min-height:470px}.gamebar{display:flex;align-items:center;justify-content:space-between;min-height:58px;padding:10px 20px;gap:15px;border-bottom:1px solid #e2e7e5}.gamebar p{color:#879398;font-size:12px;margin:4px 0 0}.gametitle{font-size:14px;font-weight:720}.gamebar .right-actions{display:flex;align-items:center;gap:10px}.panes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));flex:1;min-height:0}.pane{min-width:0;min-height:0;display:flex;flex-direction:column;border-right:1px solid #e1e5e3;background:#fff}.pane:last-child{border-right:0}.pane-top{padding:14px 17px 12px;border-bottom:1px solid #e7ebe8;min-height:92px}.pane-label{display:flex;justify-content:space-between;align-items:center;color:#94a1a4;font-size:10px;letter-spacing:1px;font-weight:750}.pane-label .tag{display:inline-flex;gap:6px;align-items:center}.dot{height:7px;width:7px;border-radius:50%;background:var(--tone)}.pane-head{display:flex;justify-content:space-between;align-items:center;gap:9px;margin-top:9px}.pane-name{font-size:17px;font-weight:680;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.pane-tools{display:flex;gap:5px;flex-shrink:0}.tool{border:1px solid #e2e6e3;background:#fff;padding:6px 9px;border-radius:6px;color:#607078;font-size:12px}.tool:hover{background:#f2f5f3}.trail{white-space:nowrap;overflow:auto;scrollbar-width:thin;border-bottom:1px solid #e8ece9;padding:9px 15px;min-height:37px;display:flex;gap:6px;align-items:center}.trail button{border:0;background:none;padding:1px 0;color:#7c8a90;font-size:11px;white-space:nowrap}.trail span{color:#aab4b8;font-size:11px}.trail button:last-child{color:#263b47;font-weight:680}.article{min-height:0;overflow:auto;overscroll-behavior:contain;padding:15px 22px 60px;font-size:13px;line-height:1.68;color:#2b3439}.article h1{font-family:Georgia,serif;font-size:28px;line-height:1.13;letter-spacing:-.7px;font-weight:500;margin:1px 0 16px;padding-bottom:11px;border-bottom:1px solid #e2e7e3}.article h2{font-family:Georgia,serif;font-size:21px;font-weight:500;border-bottom:1px solid #e4e9e6;margin:24px 0 10px}.article h3{font-size:17px;font-weight:650}.article p{margin:0 0 12px}.article a{color:#316eaa;text-decoration:none}.article a:hover{text-decoration:underline}.article a.wiki-link:hover{background:#eef5fd}.article img{max-width:100%;height:auto}.article figure{max-width:100%;margin:10px 0}.article table{font-size:11px;border-collapse:collapse;max-width:100%;display:block;overflow-x:auto}.article th,.article td{border:1px solid #e2e7e5;padding:4px 6px}.article .infobox{float:right;max-width:190px;width:46%;margin:3px 0 12px 12px;background:#fafafa}.article .thumb{float:right;max-width:190px;margin:10px 0 10px 12px}.article .thumbinner{max-width:100%;width:auto!important}.article ul,.article ol{padding-left:23px}.article .mw-editsection,.article .reference,.article .reflist,.article .navbox,.article .vertical-navbox,.article .metadata,.article .hatnote,.article .toc,.article #toc,.article .shortdescription,.article .noprint,.article .mw-cite-backlink,.article .plainlinks,.article .mw-empty-elt,.article .mw-references-wrap,.article .mw-indicators,.article .sistersitebox{display:none!important}.loading,.failure{padding:55px 12px;text-align:center;color:#8a979a;line-height:1.6;font-size:13px}.spinner{width:22px;height:22px;border:2px solid #e5eae6;border-top-color:#5e8cc2;border-radius:50%;margin:0 auto 14px;animation:spin .8s linear infinite}@keyframes spin{to{transform:rotate(360deg)}}.failure strong{display:block;font-size:15px;color:#384a52;margin-bottom:9px}.failure p{max-width:310px;margin:0 auto 12px}.failure .button{margin:7px}.respage{max-width:1060px;margin:0 auto;padding:52px 24px 85px}.results-head{text-align:center}.results-head h1{font-size:51px;letter-spacing:-2.4px;margin:12px 0 5px}.results-head p{color:#7b898e;margin:8px}.result-count{font-size:77px;letter-spacing:-4px;font-weight:760;margin:23px 0 2px}.result-count small{display:block;font-size:12px;letter-spacing:1.2px;color:#8d999b;font-weight:600}.results-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:34px 0}.result-path{border:1px solid #e2e8e5;border-top:3px solid var(--tone);border-radius:11px;padding:17px;background:white}.result-path>strong{font-size:12px;color:#74838a}.result-path .steps{margin-top:16px;display:flex;flex-direction:column;gap:10px}.step{font-size:13px;line-height:1.35;overflow-wrap:anywhere}.step:before{content:'↓';display:block;color:#adb7ba;margin:2px 0 7px}.step:first-child:before{display:none}.step:last-child{color:#23835c;font-weight:750}.results-actions{display:flex;justify-content:center;gap:10px}.results-actions .button{min-width:135px}.info{text-align:center;margin-top:22px;color:#9ca8aa;font-size:12px}.end-pill{font-size:11px;color:#23845f;border:1px solid #bae2cf;background:#eaf8f0;padding:4px 8px;border-radius:99px}.error-banner{border-top:1px solid #efdbc5;background:#fff7e9;color:#875d2b;font-size:11px;padding:7px 18px;text-align:center}@media(max-width:850px){.pane-top{padding:11px}.pane-name{font-size:14px}.article{padding:14px;font-size:12px}.tool{padding:5px 7px}.gamebar{padding:10px}.mini-flow{gap:7px}.mini-node{min-width:0;flex:1}.results-grid{gap:7px}.result-path{padding:10px}}@media(max-width:600px){.top{padding:0 12px}.brand{font-size:17px}.nav{gap:5px}.linkbtn{font-size:11px}.counter b{font-size:20px}.gamebar p{font-size:10px}.gamebar .button{padding:8px;font-size:11px}.panes{overflow-x:auto;grid-template-columns:repeat(3,minmax(290px,1fr));scroll-snap-type:x mandatory}.pane{scroll-snap-align:start}.home h1{letter-spacing:-2.3px}.results-grid{grid-template-columns:1fr}.mini-flow{gap:4px}.mini-node{font-size:11px;padding:12px 6px}.home-actions{flex-wrap:wrap}}
-</style></head><body>
-<header class="top"><div class="brand"><span class="mark"></span>converge<span style="color:#a7b2af">.</span></div><div id="topCounter" class="counter hide"><b id="moveCount">0</b><small>MOVES</small></div><nav class="nav"><button class="linkbtn" id="homeNav">Home</button><button class="linkbtn hide" id="resultsNav">Results</button></nav></header>
-<section id="home" class="home"><div class="home-inner"><div class="eyebrow">A daily Wikipedia puzzle</div><h1>All roads lead<br>somewhere.</h1><p>Start with three unrelated Wikipedia articles. Follow the real links until all three paths reach the same page. Find the connection in as few moves as possible.</p><div class="mini-flow"><span class="mini-node">Octopus</span><span class="mini-node">Piano</span><span class="mini-node">Mars</span></div><div class="home-actions"><button id="dailyBtn" class="button dark">Play today's puzzle →</button><button id="randomBtn" class="button">Random puzzle</button></div><p class="home-note">Three paths · One shared destination · Every click counts</p></div></section>
-<section id="game" class="game hide"><div class="gamebar"><div><div class="gametitle" id="puzzleTitle">Today's puzzle</div><p>Click blue Wikipedia links to navigate. Meet on one article.</p></div><div class="right-actions"><button class="button" id="restartBtn">Restart</button></div></div><div id="panes" class="panes"></div><div id="networkWarning" class="error-banner hide"></div></section>
-<section id="results" class="respage hide"><div class="results-head"><div class="eyebrow">All paths connected</div><h1>Converged.</h1><p>Your three Wikipedia paths reached <strong id="destination"></strong>.</p><div class="result-count"><span id="finalMoves">0</span><small>TOTAL MOVES</small></div></div><div id="resultPaths" class="results-grid"></div><div class="results-actions"><button class="button dark" id="shareBtn">Copy results</button><button class="button" id="newGameBtn">New puzzle →</button></div><p class="info">Every article in your route came from Wikipedia.</p></section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Converge — Three paths. One page.</title>
+<style>
+:root {
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #172126;
+  background: #f8faf9;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+button { cursor: pointer; font: inherit; }
+button:disabled { opacity: .4; cursor: default; }
+a { color: #2765a9; }
+.hide { display: none !important; }
+.top {
+  height: 62px; background: white; border-bottom: 1px solid #e2e7e5;
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0 24px; gap: 16px;
+}
+.brand { font-size: 22px; letter-spacing: -1px; font-weight: 800; }
+.brand span { color: #62a48d; }
+.nav { display: flex; gap: 12px; align-items: center; }
+.linkbtn { border: 0; background: none; color: #79868b; font-size: 13px; padding: 8px; }
+.counter { text-align: center; line-height: 1.1; }
+.counter b { display: block; font-size: 25px; }
+.counter small { font-size: 10px; letter-spacing: 1.4px; color: #879397; }
+.button {
+  border: 1px solid #d8dfdb; border-radius: 8px;
+  background: white; padding: 11px 16px; font-size: 13px;
+  font-weight: 650; color: #263037;
+}
+.button:hover { background: #f2f5f3; }
+.button.dark { background: #1b2a31; border-color: #1b2a31; color: white; }
+.button.dark:hover { background: #34464e; }
+.home {
+  min-height: calc(100dvh - 62px); display: grid; place-items: center;
+  padding: 35px 20px;
+}
+.home-inner { max-width: 680px; text-align: center; }
+.eyebrow { color: #839294; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; }
+.home h1 { font-size: clamp(49px,8vw,86px); line-height: 1.05; letter-spacing: -4px; margin: 15px 0; }
+.home p { max-width: 520px; margin: auto; color: #77858b; line-height: 1.7; }
+.mini-flow { display: flex; justify-content: center; gap: 14px; margin: 45px 0; }
+.mini-node {
+  padding: 16px 23px; background: white; border: 1px solid #dce4e0;
+  border-radius: 11px; font-size: 13px; font-weight: 600;
+}
+.mini-node:nth-child(1) { border-top: 3px solid #6284c5; }
+.mini-node:nth-child(2) { border-top: 3px solid #d29860; }
+.mini-node:nth-child(3) { border-top: 3px solid #5ca38a; }
+.home-actions { display: flex; justify-content: center; gap: 12px; }
+.home-note { margin-top: 30px !important; font-size: 12px; }
+.game { height: calc(100dvh - 62px); display: flex; flex-direction: column; }
+.gamebar {
+  min-height: 57px; display: flex; justify-content: space-between;
+  align-items: center; padding: 9px 20px; border-bottom: 1px solid #e2e7e5;
+}
+.gametitle { font-weight: 700; font-size: 14px; }
+.gamebar p { margin: 4px 0 0; color: #879398; font-size: 12px; }
+.panes { flex: 1; min-height: 0; display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); }
+.pane {
+  min-width: 0; min-height: 0; background: white;
+  display: flex; flex-direction: column; border-right: 1px solid #e1e5e3;
+}
+.pane:last-child { border-right: 0; }
+.pane-top { padding: 15px 17px; border-bottom: 1px solid #e7ebe8; }
+.pane-label {
+  display: flex; justify-content: space-between; color: #94a1a4;
+  font-size: 10px; letter-spacing: 1px; font-weight: 750;
+}
+.dot { display: inline-block; height: 7px; width: 7px; border-radius: 50%; background: var(--tone); margin-right: 6px; }
+.pane-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 10px; }
+.pane-name { font-size: 17px; font-weight: 700; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+.tool { border: 1px solid #e2e6e3; background: white; border-radius: 6px; padding: 6px 9px; color: #607078; }
+.trail {
+  display: flex; align-items: center; gap: 7px; min-height: 38px;
+  overflow-x: auto; white-space: nowrap; padding: 9px 15px;
+  border-bottom: 1px solid #e8ece9;
+}
+.trail span { font-size: 11px; color: #aab4b8; }
+.trail .previous { color: #7c8a90; }
+.trail .current { color: #263b47; font-weight: 750; }
+.article {
+  flex: 1; min-height: 0; overflow-y: auto; padding: 15px 22px 60px;
+  font-size: 13px; line-height: 1.68; color: #2b3439;
+  overscroll-behavior: contain;
+}
+.article h1 { font-family: Georgia,serif; font-size: 28px; font-weight: 500; border-bottom: 1px solid #e2e7e3; padding-bottom: 10px; }
+.article h2 { font-family: Georgia,serif; font-size: 21px; font-weight: 500; border-bottom: 1px solid #e2e7e3; }
+.article a { color: #316eaa; text-decoration: none; }
+.article a:hover { text-decoration: underline; background: #eef5fd; }
+.article img { max-width: 100%; height: auto; }
+.article figure { max-width: 100%; margin: 10px 0; }
+.article table { font-size: 11px; max-width: 100%; display: block; overflow-x: auto; }
+.article .infobox { float: right; max-width: 190px; width: 46%; margin: 3px 0 12px 12px; }
+.article .thumb { float: right; max-width: 190px; margin: 10px 0; }
+.article .mw-editsection, .article .reference, .article .reflist,
+.article .navbox, .article .metadata, .article .toc,
+.article .shortdescription, .article .noprint,
+.article .mw-references-wrap, .article .mw-indicators { display: none !important; }
+.loading, .failure { padding: 55px 12px; text-align: center; color: #8a979a; font-size: 13px; }
+.spinner {
+  width: 23px; height: 23px; border: 2px solid #e5eae6;
+  border-top-color: #6284c5; border-radius: 50%;
+  margin: 0 auto 15px; animation: spin .8s linear infinite;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.failure strong { display: block; font-size: 15px; margin-bottom: 10px; }
+.respage { max-width: 1080px; margin: auto; padding: 52px 24px 85px; }
+.results-head { text-align: center; }
+.results-head h1 { font-size: 52px; letter-spacing: -2px; margin: 12px 0; }
+.results-head p { color: #7b898e; }
+.result-count { font-size: 76px; font-weight: 800; text-align: center; letter-spacing: -4px; margin: 25px 0; }
+.result-count small { display: block; font-size: 12px; letter-spacing: 1px; font-weight: 600; color: #8d999b; }
+.results-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin: 35px 0; }
+.result-path { border: 1px solid #e2e8e5; border-top: 3px solid var(--tone); border-radius: 10px; padding: 18px; background: white; }
+.result-path strong { font-size: 12px; color: #74838a; }
+.steps { display: flex; flex-direction: column; gap: 10px; margin-top: 16px; }
+.step { font-size: 13px; overflow-wrap: anywhere; }
+.step:not(:first-child):before { content: '↓'; display: block; color: #adb7ba; margin: 4px 0 8px; }
+.step:last-child { color: #23835c; font-weight: 750; }
+.results-actions { display: flex; justify-content: center; gap: 10px; }
+.info { text-align: center; font-size: 12px; color: #9ca8aa; margin-top: 22px; }
+.error-banner { background: #fff7e9; color: #875d2b; font-size: 11px; text-align: center; padding: 8px; }
+@media(max-width:750px) {
+  .panes { overflow-x: auto; grid-template-columns: repeat(3,minmax(290px,1fr)); }
+  .article { padding: 14px; }
+  .results-grid { grid-template-columns: 1fr; }
+  .home h1 { letter-spacing: -2px; }
+  .mini-node { padding: 13px 10px; }
+}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">converge<span>.</span></div>
+  <div id="topCounter" class="counter hide">
+    <b id="moveCount">0</b>
+    <small>MOVES</small>
+  </div>
+  <nav class="nav">
+    <button class="linkbtn" id="homeNav">Home</button>
+    <button class="linkbtn hide" id="resultsNav">Results</button>
+  </nav>
+</header>
+
+<section id="home" class="home">
+  <div class="home-inner">
+    <div class="eyebrow">A daily Wikipedia puzzle</div>
+    <h1>All roads lead<br>somewhere.</h1>
+    <p>Start with three unrelated Wikipedia articles. Follow the real links until all three paths reach the same page. Find the connection in as few moves as possible.</p>
+    <div class="mini-flow">
+      <span class="mini-node">Octopus</span>
+      <span class="mini-node">Piano</span>
+      <span class="mini-node">Mars</span>
+    </div>
+    <div class="home-actions">
+      <button id="dailyBtn" class="button dark">Play today's puzzle →</button>
+      <button id="randomBtn" class="button">Random puzzle</button>
+    </div>
+    <p class="home-note">Three paths · One destination · No undoing</p>
+  </div>
+</section>
+
+<section id="game" class="game hide">
+  <div class="gamebar">
+    <div>
+      <div class="gametitle" id="puzzleTitle">Today's puzzle</div>
+      <p>Only move forward through Wikipedia links. Every click counts.</p>
+    </div>
+    <button class="button" id="restartBtn">Restart</button>
+  </div>
+  <div id="panes" class="panes"></div>
+  <div id="networkWarning" class="error-banner hide"></div>
+</section>
+
+<section id="results" class="respage hide">
+  <div class="results-head">
+    <div class="eyebrow">All paths connected</div>
+    <h1>Converged.</h1>
+    <p>All three paths reached <strong id="destination"></strong>.</p>
+    <div class="result-count">
+      <span id="finalMoves">0</span>
+      <small>TOTAL MOVES</small>
+    </div>
+  </div>
+  <div id="resultPaths" class="results-grid"></div>
+  <div class="results-actions">
+    <button class="button dark" id="shareBtn">Copy results</button>
+    <button class="button" id="newGameBtn">New puzzle →</button>
+  </div>
+  <p class="info">Every article in your route came from Wikipedia.</p>
+</section>
+
 <script>
-(()=>{'use strict';
-const API='https://en.wikipedia.org/w/api.php';
-const pool=['Octopus','Piano','Mars','Origami','Antarctica','Jazz','Volcano','Chess','Honey bee','Lighthouse','Chocolate','Black hole','Bicycle','Penguin','Photography','Tornado','Sushi','Moon','Shark','Leonardo da Vinci','Coral reef','DNA','Coffee','Saturn','Ice cream','Mount Everest','Compass','Dinosaur','Violin','Aurora','Ancient Egypt','Submarine','Butterfly','Solar System','Electric guitar','Rainforest','Sailing','Telescope','Camouflage','Space exploration','Pyramid','Whale','Lunar eclipse','Tennis','Sand','Origami','Beethoven','Jupiter'];
-const tones=['#6284c5','#d29860','#5ca38a'];const $=id=>document.getElementById(id);const date=new Date().toISOString().slice(0,10);let state=null,requests=[0,0,0],controllers=[null,null,null],cache=new Map(),route='home';
-function hash(s){let h=2166136261;for(let c of s){h^=c.charCodeAt(0);h=Math.imul(h,16777619)}return h>>>0}function pick(seed){let selected=[],n=seed>>>0;while(selected.length<3){n=(Math.imul(n,1664525)+1013904223)>>>0;let i=n%pool.length;if(!selected.includes(i))selected.push(i)}return selected.map(i=>pool[i])}
-function norm(s){return (s||'').replaceAll('_',' ').replace(/\s+/g,' ').trim().toLowerCase()}function key(){return 'converge-v2-'+state.id}function save(){try{localStorage.setItem(key(),JSON.stringify(state))}catch(e){}}function reached(){return state&&state.paths.every(p=>norm(p.at(-1))===norm(state.paths[0].at(-1)))}function steps(){return state.paths.reduce((sum,p)=>sum+p.length-1,0)}
-function navigate(page){route=page;['home','game','results'].forEach(id=>$(id).classList.toggle('hide',id!==page));$('topCounter').classList.toggle('hide',page==='home');$('resultsNav').classList.toggle('hide',!reached());if(page==='results')renderResults();if(page==='game')renderGame();}
-function start(id,starts){let previous;try{previous=JSON.parse(localStorage.getItem('converge-v2-'+id)||'null')}catch(e){}state=previous&&previous.paths?.length===3?previous:{id,starts,paths:starts.map(s=>[s])};save();navigate(reached()?'results':'game')}
-function randomGame(){const seed=Math.floor(Math.random()*2**32);start('random-'+seed,pick(seed))}function dailyGame(){start('daily-'+date,pick(hash(date)))}
-function paneNode(i){let section=document.createElement('section');section.className='pane';section.style.setProperty('--tone',tones[i]);section.innerHTML=`<div class="pane-top"><div class="pane-label"><span class="tag"><span class="dot"></span>PATH ${i+1}</span><span class="visits"></span></div><div class="pane-head"><span class="pane-name"></span><div class="pane-tools"><button class="tool back" title="Back to previous page">←</button><button class="tool external" title="Open original Wikipedia page">↗</button></div></div></div><div class="trail"></div><div class="article"></div>`;
-section.querySelector('.back').onclick=()=>{const p=state.paths[i];if(p.length>=2)follow(i,p[p.length-2])};section.querySelector('.external').onclick=()=>window.open('https://en.wikipedia.org/wiki/'+encodeURIComponent(state.paths[i].at(-1).replaceAll(' ','_')),'_blank','noopener');section.querySelector('.article').addEventListener('click',e=>{let a=e.target.closest('a');if(!a)return;const title=a.dataset.article;if(title){e.preventDefault();follow(i,title)}else if(a.getAttribute('href')?.startsWith('#')){e.preventDefault();section.querySelector('.article').querySelector('[id="'+CSS.escape(a.getAttribute('href').slice(1))+'"]')?.scrollIntoView({behavior:'smooth'})}});return section}
-function renderGame(){if(!state)return;$('moveCount').textContent=steps();$('puzzleTitle').textContent=state.id.startsWith('daily-')?"Today's puzzle · "+date:'Random puzzle';const root=$('panes');root.replaceChildren();for(let i=0;i<3;i++){let el=paneNode(i);root.append(el);refreshPane(i);load(i)}}
-function refreshPane(i){const el=$('panes').children[i];if(!el)return;const path=state.paths[i];el.querySelector('.pane-name').textContent=path.at(-1);el.querySelector('.visits').textContent=(path.length-1)+' MOVES';el.querySelector('.back').disabled=path.length===1;const trail=el.querySelector('.trail');trail.replaceChildren();path.forEach((title,j)=>{if(j){let sep=document.createElement('span');sep.textContent='›';trail.append(sep)}let btn=document.createElement('button');btn.textContent=title;btn.title='Return to this article (counts as one move)';btn.onclick=()=>{if(j!==path.length-1)follow(i,title)};trail.append(btn)});trail.scrollLeft=trail.scrollWidth}
-function follow(i,title){if(!title||reached())return;state.paths[i].push(title);save();$('moveCount').textContent=steps();refreshPane(i);if(reached()){navigate('results');return}load(i)}
-function resolveTitle(a){const href=a.getAttribute('href');if(!href||href.startsWith('#')||href.startsWith('mailto:')||href.startsWith('javascript:'))return null;let u;try{u=new URL(href,href.startsWith('./')?'https://en.wikipedia.org/wiki/':'https://en.wikipedia.org')}catch(e){return null}if(!['en.wikipedia.org','en.m.wikipedia.org'].includes(u.hostname))return null;let t=u.pathname.startsWith('/wiki/')?u.pathname.slice(6):u.pathname==='/w/index.php'?u.searchParams.get('title'):href.startsWith('./')?href.slice(2).split('#')[0].split('?')[0]:null;if(!t)return null;try{t=decodeURIComponent(t)}catch(e){}t=t.replaceAll('_',' ');if(/^(Special|File|Image|Category|Help|Wikipedia|Portal|Template|Talk|User|Draft|Module|Media|TimedText):/i.test(t))return null;return t}
-function cleanHTML(raw){let doc=new DOMParser().parseFromString('<div id="wiki-root">'+raw+'</div>','text/html');let root=doc.getElementById('wiki-root');root.querySelectorAll('script,style,iframe,form,button,input,video,audio,object,embed,link,meta,svg,source').forEach(x=>x.remove());root.querySelectorAll('*').forEach(el=>{for(let a of Array.from(el.attributes)){if(a.name.startsWith('on')||['style','srcset','contenteditable'].includes(a.name))el.removeAttribute(a.name)}});root.querySelectorAll('a').forEach(a=>{let title=resolveTitle(a);if(title){a.dataset.article=title;a.classList.add('wiki-link');a.href='https://en.wikipedia.org/wiki/'+encodeURIComponent(title.replaceAll(' ','_'));a.removeAttribute('target')}else{a.setAttribute('target','_blank');a.setAttribute('rel','noopener noreferrer')}});root.querySelectorAll('img').forEach(img=>{const s=img.getAttribute('src');if(s&&s.startsWith('//'))img.src='https:'+s;img.loading='lazy';img.referrerPolicy='no-referrer'});return root}
-async function fetchJson(title,signal){const opts={signal,mode:'cors',credentials:'omit',headers:{'Accept':'application/json'}};const q=new URLSearchParams({action:'parse',page:title,prop:'text',format:'json',formatversion:'2',redirects:'1',disableeditsection:'1',origin:'*'});let r=await fetch(API+'?'+q,opts);if(!r.ok)throw Error('Wikipedia returned HTTP '+r.status);let data=await r.json();if(data.error)throw Error(data.error.info||'Article unavailable');if(!data.parse?.text)throw Error('No article content returned');return{title:data.parse.title||title,html:data.parse.text}}
-async function fetchRest(title,signal){const r=await fetch('https://en.wikipedia.org/api/rest_v1/page/html/'+encodeURIComponent(title.replaceAll(' ','_')), {signal,mode:'cors',credentials:'omit'});if(!r.ok)throw Error('Wikipedia REST returned '+r.status);const html=await r.text();const doc=new DOMParser().parseFromString(html,'text/html');doc.querySelectorAll('base').forEach(e=>e.remove());let body=doc.querySelector('body');if(!body||!body.textContent.trim())throw Error('No article content returned');return{title:doc.querySelector('title')?.textContent||title,html:body.innerHTML}}
-async function fetchProxy(title,signal){
-  const r=await fetch('/api/wiki?title='+encodeURIComponent(title),{signal,headers:{Accept:'application/json'}});
-  if(!r.ok){let data={};try{data=await r.json()}catch(_){}throw Error(data.error||('Website proxy returned '+r.status));}
-  const data=await r.json();if(!data.html||!data.title)throw Error('Proxy returned an invalid article');return data;
+(() => {
+"use strict";
+
+const API = "https://en.wikipedia.org/w/api.php";
+
+const pool = [
+  "Octopus","Piano","Mars","Origami","Antarctica","Jazz",
+  "Volcano","Chess","Honey bee","Lighthouse","Chocolate",
+  "Black hole","Bicycle","Penguin","Photography","Tornado",
+  "Sushi","Moon","Shark","Leonardo da Vinci","Coral reef",
+  "DNA","Coffee","Saturn","Ice cream","Mount Everest",
+  "Compass","Dinosaur","Violin","Aurora","Ancient Egypt",
+  "Submarine","Butterfly","Solar System","Electric guitar",
+  "Rainforest","Sailing","Telescope","Camouflage",
+  "Space exploration","Pyramid","Whale","Lunar eclipse",
+  "Tennis","Sand","Beethoven","Jupiter"
+];
+
+const tones = ["#6284c5","#d29860","#5ca38a"];
+const $ = id => document.getElementById(id);
+const date = new Date().toISOString().slice(0,10);
+
+let state = null;
+let route = "home";
+let cache = new Map();
+let requests = [0,0,0];
+let controllers = [null,null,null];
+
+function hash(s) {
+  let h = 2166136261;
+  for(const c of s) {
+    h ^= c.charCodeAt(0);
+    h = Math.imul(h,16777619);
+  }
+  return h >>> 0;
 }
-async function getArticle(title,signal){
-  const k=norm(title);if(cache.has(k))return cache.get(k);
-  // When deployed to Netlify, the same-origin function fetches Wikipedia server-side.
-  // In a local/file preview we try direct Wikipedia CORS as a best-effort fallback.
-  const methods=location.protocol==='file:'?[fetchJson,fetchRest]:[fetchProxy,fetchJson,fetchRest];
-  let failures=[];
-  for(const method of methods){try{const item=await method(title,signal);cache.set(k,item);cache.set(norm(item.title),item);$('networkWarning').classList.add('hide');return item}catch(e){if(e.name==='AbortError')throw e;failures.push(e.message)}}
-  throw Error(failures.join(' | '));
+
+function pick(seed) {
+  let selected = [];
+  let n = seed >>> 0;
+  while(selected.length < 3) {
+    n = (Math.imul(n,1664525) + 1013904223) >>> 0;
+    let i = n % pool.length;
+    if(!selected.includes(i)) selected.push(i);
+  }
+  return selected.map(i => pool[i]);
 }
-async function load(i){let el=$('panes').children[i];if(!el)return;controllers[i]?.abort();let id=++requests[i],title=state.paths[i].at(-1),article=el.querySelector('.article');article.innerHTML='<div class="loading"><div class="spinner"></div>Loading Wikipedia…</div>';let ctl=new AbortController();controllers[i]=ctl;try{let item=await getArticle(title,ctl.signal);if(requests[i]!==id||route!=='game'||state.paths[i].at(-1)!==title)return;state.paths[i][state.paths[i].length-1]=item.title;if(state.paths[i].length===1)state.starts[i]=item.title;save();refreshPane(i);if(reached()){navigate('results');return}article.replaceChildren();let h=document.createElement('h1');h.textContent=item.title;article.append(h,...Array.from(cleanHTML(item.html).childNodes));article.scrollTop=0}catch(e){if(e.name==='AbortError'||requests[i]!==id)return;article.replaceChildren();let b=document.createElement('div');b.className='failure';let strong=document.createElement('strong');strong.textContent='Wikipedia could not load';let desc=document.createElement('p');desc.textContent='Live articles need Wikipedia access. The included Netlify server function fixes blocked browser requests when the full website folder is deployed. '+e.message;let retry=document.createElement('button');retry.className='button';retry.textContent='Try again';retry.onclick=()=>load(i);let external=document.createElement('button');external.className='button';external.textContent='Open on Wikipedia ↗';external.onclick=()=>window.open('https://en.wikipedia.org/wiki/'+encodeURIComponent(title.replaceAll(' ','_')),'_blank','noopener');b.append(strong,desc,retry,external);article.append(b);$('networkWarning').textContent='For reliable Wikipedia loading, deploy the entire Converge folder to Netlify (including netlify/functions). Opening index.html locally will not run the proxy.';$('networkWarning').classList.remove('hide')}}
-function renderResults(){if(!state||!reached())return;$('moveCount').textContent=steps();$('finalMoves').textContent=steps();$('destination').textContent=state.paths[0].at(-1);let root=$('resultPaths');root.replaceChildren();state.paths.forEach((path,i)=>{let box=document.createElement('div');box.className='result-path';box.style.setProperty('--tone',tones[i]);let heading=document.createElement('strong');heading.textContent='PATH '+(i+1)+' · '+(path.length-1)+' MOVES';let stepsBox=document.createElement('div');stepsBox.className='steps';path.forEach(t=>{let div=document.createElement('div');div.className='step';div.textContent=t;stepsBox.append(div)});box.append(heading,stepsBox);root.append(box)})}
-$('dailyBtn').onclick=dailyGame;$('randomBtn').onclick=randomGame;$('newGameBtn').onclick=randomGame;$('homeNav').onclick=()=>navigate('home');$('resultsNav').onclick=()=>{if(reached())navigate('results')};$('restartBtn').onclick=()=>{if(!confirm('Restart all three paths and clear your moves?'))return;state.paths=state.starts.map(s=>[s]);save();$('networkWarning').classList.add('hide');navigate('game')};$('shareBtn').onclick=async()=>{let message='CONVERGE — '+steps()+' moves\n'+state.paths.map((p,i)=>'Path '+(i+1)+': '+p.join(' → ')).join('\n');try{await navigator.clipboard.writeText(message);$('shareBtn').textContent='Copied!';setTimeout(()=>$('shareBtn').textContent='Copy results',1800)}catch(e){prompt('Copy your results',message)}};
+
+function norm(s) {
+  return (s || "").replaceAll("_"," ").replace(/\s+/g," ").trim().toLowerCase();
+}
+
+function key() {
+  return "converge-v3-" + state.id;
+}
+
+function save() {
+  try { localStorage.setItem(key(),JSON.stringify(state)); }
+  catch(e) {}
+}
+
+function reached() {
+  return state && state.paths.every(
+    p => norm(p.at(-1)) === norm(state.paths[0].at(-1))
+  );
+}
+
+function steps() {
+  return state.paths.reduce((sum,p) => sum + p.length - 1,0);
+}
+
+function navigate(page) {
+  route = page;
+  ["home","game","results"].forEach(id => {
+    $(id).classList.toggle("hide",id !== page);
+  });
+  $("topCounter").classList.toggle("hide",page === "home");
+  $("resultsNav").classList.toggle("hide",!reached());
+
+  if(page === "results") renderResults();
+  if(page === "game") renderGame();
+}
+
+function start(id,starts) {
+  let previous;
+  try {
+    previous = JSON.parse(localStorage.getItem("converge-v3-" + id) || "null");
+  } catch(e) {}
+
+  state = previous && previous.paths?.length === 3
+    ? previous
+    : {id,starts,paths:starts.map(s => [s])};
+
+  save();
+  navigate(reached() ? "results" : "game");
+}
+
+function randomGame() {
+  const seed = Math.floor(Math.random() * 2**32);
+  start("random-" + seed,pick(seed));
+}
+
+function dailyGame() {
+  start("daily-" + date,pick(hash(date)));
+}
+
+function paneNode(i) {
+  const section = document.createElement("section");
+  section.className = "pane";
+  section.style.setProperty("--tone",tones[i]);
+
+  section.innerHTML = `
+    <div class="pane-top">
+      <div class="pane-label">
+        <span><span class="dot"></span>PATH ${i+1}</span>
+        <span class="visits"></span>
+      </div>
+      <div class="pane-head">
+        <span class="pane-name"></span>
+        <button class="tool external" title="View current article on Wikipedia">↗</button>
+      </div>
+    </div>
+    <div class="trail"></div>
+    <div class="article"></div>
+  `;
+
+  section.querySelector(".external").onclick = () => {
+    const title = state.paths[i].at(-1);
+    window.open(
+      "https://en.wikipedia.org/wiki/" + encodeURIComponent(title.replaceAll(" ","_")),
+      "_blank","noopener"
+    );
+  };
+
+  section.querySelector(".article").addEventListener("click",e => {
+    const a = e.target.closest("a");
+    if(!a) return;
+
+    const title = a.dataset.article;
+    if(title) {
+      e.preventDefault();
+      follow(i,title);
+    } else if(a.getAttribute("href")?.startsWith("#")) {
+      e.preventDefault();
+      const id = a.getAttribute("href").slice(1);
+      section.querySelector(".article")
+        .querySelector('[id="' + CSS.escape(id) + '"]')
+        ?.scrollIntoView({behavior:"smooth"});
+    }
+  });
+
+  return section;
+}
+
+function renderGame() {
+  if(!state) return;
+  $("moveCount").textContent = steps();
+  $("puzzleTitle").textContent = state.id.startsWith("daily-")
+    ? "Today's puzzle · " + date
+    : "Random puzzle";
+
+  const root = $("panes");
+  root.replaceChildren();
+
+  for(let i=0;i<3;i++) {
+    root.append(paneNode(i));
+    refreshPane(i);
+    load(i);
+  }
+}
+
+// Previous pages are text only. They cannot be clicked.
+function refreshPane(i) {
+  const el = $("panes").children[i];
+  if(!el) return;
+
+  const path = state.paths[i];
+  el.querySelector(".pane-name").textContent = path.at(-1);
+  el.querySelector(".visits").textContent = (path.length-1) + " MOVES";
+
+  const trail = el.querySelector(".trail");
+  trail.replaceChildren();
+
+  path.forEach((title,j) => {
+    if(j > 0) {
+      const separator = document.createElement("span");
+      separator.textContent = "›";
+      trail.append(separator);
+    }
+
+    const crumb = document.createElement("span");
+    crumb.textContent = title;
+    crumb.className = j === path.length-1 ? "current" : "previous";
+    crumb.title = "Path history — no undoing";
+    trail.append(crumb);
+  });
+
+  trail.scrollLeft = trail.scrollWidth;
+}
+
+// A move can only append a new page. Never remove a step.
+function follow(i,title) {
+  if(!title || reached()) return;
+
+  state.paths[i].push(title);
+  save();
+
+  $("moveCount").textContent = steps();
+  refreshPane(i);
+
+  if(reached()) {
+    navigate("results");
+    return;
+  }
+
+  load(i);
+}
+
+function resolveTitle(a) {
+  const href = a.getAttribute("href");
+  if(!href || href.startsWith("#") ||
+     href.startsWith("mailto:") ||
+     href.startsWith("javascript:")) return null;
+
+  let u;
+  try {
+    u = new URL(
+      href,
+      href.startsWith("./")
+        ? "https://en.wikipedia.org/wiki/"
+        : "https://en.wikipedia.org"
+    );
+  } catch(e) {
+    return null;
+  }
+
+  if(!["en.wikipedia.org","en.m.wikipedia.org"].includes(u.hostname)) return null;
+
+  let t = u.pathname.startsWith("/wiki/")
+    ? u.pathname.slice(6)
+    : u.pathname === "/w/index.php"
+      ? u.searchParams.get("title")
+      : href.startsWith("./")
+        ? href.slice(2).split("#")[0].split("?")[0]
+        : null;
+
+  if(!t) return null;
+  try { t = decodeURIComponent(t); } catch(e) {}
+  t = t.replaceAll("_"," ");
+
+  if(/^(Special|File|Image|Category|Help|Wikipedia|Portal|Template|Talk|User|Draft|Module|Media|TimedText):/i.test(t))
+    return null;
+
+  return t;
+}
+
+function cleanHTML(raw) {
+  const doc = new DOMParser().parseFromString(
+    '<div id="wiki-root">' + raw + "</div>","text/html"
+  );
+  const root = doc.getElementById("wiki-root");
+
+  root.querySelectorAll(
+    "script,style,iframe,form,button,input,video,audio,object,embed,link,meta,svg,source"
+  ).forEach(el => el.remove());
+
+  root.querySelectorAll("*").forEach(el => {
+    for(const attr of Array.from(el.attributes)) {
+      if(attr.name.startsWith("on") ||
+         ["style","srcset","contenteditable"].includes(attr.name)) {
+        el.removeAttribute(attr.name);
+      }
+    }
+  });
+
+  root.querySelectorAll("a").forEach(a => {
+    const title = resolveTitle(a);
+    if(title) {
+      a.dataset.article = title;
+      a.classList.add("wiki-link");
+      a.href = "https://en.wikipedia.org/wiki/" +
+        encodeURIComponent(title.replaceAll(" ","_"));
+      a.removeAttribute("target");
+    } else {
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    }
+  });
+
+  root.querySelectorAll("img").forEach(img => {
+    const src = img.getAttribute("src");
+    if(src && src.startsWith("//")) img.src = "https:" + src;
+    img.loading = "lazy";
+    img.referrerPolicy = "no-referrer";
+  });
+
+  return root;
+}
+
+async function fetchJson(title,signal) {
+  const q = new URLSearchParams({
+    action:"parse",page:title,prop:"text",
+    format:"json",formatversion:"2",
+    redirects:"1",disableeditsection:"1",origin:"*"
+  });
+
+  const r = await fetch(API + "?" + q,{
+    signal,mode:"cors",credentials:"omit",
+    headers:{Accept:"application/json"}
+  });
+
+  if(!r.ok) throw Error("Wikipedia HTTP " + r.status);
+
+  const data = await r.json();
+  if(data.error) throw Error(data.error.info);
+  if(!data.parse?.text) throw Error("Article not available");
+
+  return {
+    title:data.parse.title || title,
+    html:data.parse.text
+  };
+}
+
+async function fetchRest(title,signal) {
+  const r = await fetch(
+    "https://en.wikipedia.org/api/rest_v1/page/html/" +
+    encodeURIComponent(title.replaceAll(" ","_")),
+    {signal,mode:"cors",credentials:"omit"}
+  );
+
+  if(!r.ok) throw Error("Wikipedia REST HTTP " + r.status);
+
+  const html = await r.text();
+  const doc = new DOMParser().parseFromString(html,"text/html");
+  const body = doc.querySelector("body");
+
+  if(!body || !body.textContent.trim())
+    throw Error("Empty Wikipedia article");
+
+  return {
+    title:doc.querySelector("title")?.textContent || title,
+    html:body.innerHTML
+  };
+}
+
+// This uses the existing Netlify server function.
+async function fetchProxy(title,signal) {
+  const r = await fetch("/api/wiki?title=" + encodeURIComponent(title),{
+    signal,
+    headers:{Accept:"application/json"}
+  });
+
+  if(!r.ok) {
+    let data = {};
+    try { data = await r.json(); } catch(e) {}
+    throw Error(data.error || "Proxy HTTP " + r.status);
+  }
+
+  const data = await r.json();
+  if(!data.html || !data.title)
+    throw Error("Invalid article response");
+
+  return data;
+}
+
+async function getArticle(title,signal) {
+  const k = norm(title);
+  if(cache.has(k)) return cache.get(k);
+
+  const methods = location.protocol === "file:"
+    ? [fetchJson,fetchRest]
+    : [fetchProxy,fetchJson,fetchRest];
+
+  let failures = [];
+
+  for(const method of methods) {
+    try {
+      const item = await method(title,signal);
+      cache.set(k,item);
+      cache.set(norm(item.title),item);
+      $("networkWarning").classList.add("hide");
+      return item;
+    } catch(e) {
+      if(e.name === "AbortError") throw e;
+      failures.push(e.message);
+    }
+  }
+
+  throw Error(failures.join(" | "));
+}
+
+async function load(i) {
+  const el = $("panes").children[i];
+  if(!el) return;
+
+  controllers[i]?.abort();
+  const id = ++requests[i];
+  const title = state.paths[i].at(-1);
+  const article = el.querySelector(".article");
+
+  article.innerHTML = `
+    <div class="loading">
+      <div class="spinner"></div>
+      Loading Wikipedia…
+    </div>
+  `;
+
+  const ctl = new AbortController();
+  controllers[i] = ctl;
+
+  try {
+    const item = await getArticle(title,ctl.signal);
+
+    if(requests[i] !== id ||
+       route !== "game" ||
+       state.paths[i].at(-1) !== title) return;
+
+    state.paths[i][state.paths[i].length-1] = item.title;
+    if(state.paths[i].length === 1) state.starts[i] = item.title;
+    save();
+    refreshPane(i);
+
+    if(reached()) {
+      navigate("results");
+      return;
+    }
+
+    article.replaceChildren();
+    const heading = document.createElement("h1");
+    heading.textContent = item.title;
+    article.append(heading,...Array.from(cleanHTML(item.html).childNodes));
+    article.scrollTop = 0;
+
+  } catch(e) {
+    if(e.name === "AbortError" || requests[i] !== id) return;
+
+    article.replaceChildren();
+
+    const box = document.createElement("div");
+    box.className = "failure";
+
+    const heading = document.createElement("strong");
+    heading.textContent = "Wikipedia could not load";
+
+    const desc = document.createElement("p");
+    desc.textContent = e.message;
+
+    const retry = document.createElement("button");
+    retry.className = "button";
+    retry.textContent = "Try again";
+    retry.onclick = () => load(i);
+
+    box.append(heading,desc,retry);
+    article.append(box);
+  }
+}
+
+function renderResults() {
+  if(!state || !reached()) return;
+
+  $("moveCount").textContent = steps();
+  $("finalMoves").textContent = steps();
+  $("destination").textContent = state.paths[0].at(-1);
+
+  const root = $("resultPaths");
+  root.replaceChildren();
+
+  state.paths.forEach((path,i) => {
+    const box = document.createElement("div");
+    box.className = "result-path";
+    box.style.setProperty("--tone",tones[i]);
+
+    const heading = document.createElement("strong");
+    heading.textContent = "PATH " + (i+1) + " · " + (path.length-1) + " MOVES";
+
+    const stepsBox = document.createElement("div");
+    stepsBox.className = "steps";
+
+    path.forEach(title => {
+      const div = document.createElement("div");
+      div.className = "step";
+      div.textContent = title;
+      stepsBox.append(div);
+    });
+
+    box.append(heading,stepsBox);
+    root.append(box);
+  });
+}
+
+$("dailyBtn").onclick = dailyGame;
+$("randomBtn").onclick = randomGame;
+$("newGameBtn").onclick = randomGame;
+$("homeNav").onclick = () => navigate("home");
+
+$("resultsNav").onclick = () => {
+  if(reached()) navigate("results");
+};
+
+// Restarting starts a new attempt, clearing all moves.
+$("restartBtn").onclick = () => {
+  if(!confirm("Restart all three paths and clear your moves?")) return;
+  state.paths = state.starts.map(s => [s]);
+  save();
+  navigate("game");
+};
+
+$("shareBtn").onclick = async () => {
+  const message = "CONVERGE — " + steps() + " moves\n" +
+    state.paths.map((p,i) =>
+      "Path " + (i+1) + ": " + p.join(" → ")
+    ).join("\n");
+
+  try {
+    await navigator.clipboard.writeText(message);
+    $("shareBtn").textContent = "Copied!";
+    setTimeout(() => $("shareBtn").textContent = "Copy results",1800);
+  } catch(e) {
+    prompt("Copy your results",message);
+  }
+};
+
 })();
-</script></body></html>
+</script>
+</body>
+</html>
