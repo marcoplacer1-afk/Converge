@@ -1,0 +1,9 @@
+{
+  "name": "converge-wikipedia-race",
+  "version": "3.0.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@netlify/blobs": "^11.1.9"
+  }
+}
